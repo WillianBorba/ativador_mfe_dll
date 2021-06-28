@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="991.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gui.OutrasOpcoesController">
+   <children>
+      <Label layoutX="14.0" layoutY="39.0" text="Codigo de Ativacao" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAtivacao" layoutX="141.0" layoutY="34.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="141.0" />
+      <Label layoutX="649.0" layoutY="24.0" text="Console:" AnchorPane.rightAnchor="183.0">
+         <font>
+            <Font name="Verdana Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="86.0" prefHeight="39.0" prefWidth="134.0" text="Enviar venda teste" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="159.0" text="Cancelar Venda" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btExtrairLog" layoutX="15.0" layoutY="211.0" mnemonicParsing="false" onAction="#onBtExtrairLogAction" prefHeight="48.0" prefWidth="134.0" text="Extrair log" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtVenda" layoutX="141.0" layoutY="94.0" prefHeight="23.0" prefWidth="169.0" promptText="Selecione o arquivo XML" AnchorPane.leftAnchor="141.0">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btEnviarTeste" layoutX="362.0" layoutY="93.0" mnemonicParsing="false" onAction="#onBtEnviarTesteAction" prefHeight="25.0" prefWidth="82.0" text="Enviar" AnchorPane.leftAnchor="362.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSelecionarArquivo" layoutX="320.0" layoutY="93.0" mnemonicParsing="false" onAction="#onBtSelecionarArquivoAction" prefHeight="25.0" prefWidth="28.0" text="..." AnchorPane.leftAnchor="320.0" />
+      <TextField fx:id="txtCancelar" layoutX="141.0" layoutY="154.0" prefHeight="25.0" prefWidth="221.0" promptText="Digite os dados de cancelamento" AnchorPane.leftAnchor="141.0">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btCancelarVenda" layoutX="371.0" layoutY="155.0" mnemonicParsing="false" onAction="#onBtCancelarVendaAction" prefHeight="25.0" prefWidth="82.0" text="Cancelar" AnchorPane.leftAnchor="371.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btBloquear" layoutX="14.0" layoutY="267.0" mnemonicParsing="false" onAction="#onBtBloquearAction" prefHeight="48.0" prefWidth="134.0" text="Bloquear MFE" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btDesbloquear" layoutX="14.0" layoutY="325.0" mnemonicParsing="false" onAction="#onBtDesbloquarAction" prefHeight="48.0" prefWidth="134.0" text="Desbloquear MFE" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btAtualizar" layoutX="14.0" layoutY="383.0" mnemonicParsing="false" onAction="#onBtAtualizarAction" prefHeight="48.0" prefWidth="134.0" text="Atualizar" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="areaConsole" editable="false" layoutX="478.0" layoutY="80.0" prefHeight="375.0" prefWidth="500.0" wrapText="true" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="80.0" />
+      <Button fx:id="btCancelar" layoutX="828.0" layoutY="496.0" mnemonicParsing="false" onAction="#onBtCancelarAction" prefHeight="48.0" prefWidth="149.0" text="Voltar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btTrocarCodigo" layoutX="14.0" layoutY="496.0" mnemonicParsing="false" onAction="#onBtTrocarCodigoAction" prefHeight="48.0" prefWidth="211.0" text="Trocar Codigo de ativação" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
